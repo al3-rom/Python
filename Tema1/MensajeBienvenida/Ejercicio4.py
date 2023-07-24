@@ -1,7 +1,7 @@
 # Almacenar el string ‘estas usando python’ en una variable y mostar por pantalla
 
 
-var1 = "Estas usando Python!"
+var1 = "estas usando Python!"
 
 print(var1)
 
@@ -10,7 +10,7 @@ print(var1)
 nombre = input()
 
 
-mensaje = "Hola " + nombre+ ", " + var1
+mensaje = "Hola, " + nombre+ ", " + var1
 
 print(mensaje)
 
