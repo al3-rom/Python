@@ -1,14 +1,12 @@
 # Almacenar el string ‘estas usando python’ en una variable y mostar por pantalla
-
-
-var1 = "estas usando Python!"
+lenguage = "Python"
+var1 = "estas usando python" 
 
 print(var1)
 
 # Preguntar el nombre del usuario y mostrar por pantalla
 
 nombre = input()
-
 
 mensaje = "Hola, " + nombre+ ", " + var1
 
@@ -20,14 +18,11 @@ mensaje = mensaje.upper()
 
 print(mensaje)
 
-
-
 # Ahora una funcion para que salga todo en minusculas
 
 mensaje = mensaje.lower()
 
 print(mensaje)
-
 
 # Hacer que el nombre del usuario salga bien( JUaN = Juan)
 
@@ -43,6 +38,6 @@ print(nombre)
 
 # Consigue que el mensaje final sea: ‘¡Hola, <Nombre>, estas usando Python!’
 
-mensaje = mensaje.title()
+mensaje = "Hola, " + nombre+ ", estas usando " + lenguage + "!"
 
 print(mensaje)
