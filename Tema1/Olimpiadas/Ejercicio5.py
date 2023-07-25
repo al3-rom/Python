@@ -1,61 +1,27 @@
-# Hannah Neise: 8 minutos 3 segundos y 10 centésimas
-# Jackie Narracott: 12 minutos 7 segundos y 8 centésimas
-# Kimberley Bos: 9 minutos 14 segundos y 3 centésimas
+minutos_hannah = input("Ingresa los minutos para hannah")
+segundos_hannah = input("Ingresa los segundos para hannah")
+centesimas_hannah = input("Ingresa las centesimas para hannah")
 
-# Pedir tiempos para cada uno de los finalistas
-HannahMinSt = input("Pon minutos de Hannah: ")
-HannahSegSt = input("Segundos de Hannah: ")
-HannahCentSt = input("Centesimas de Hannah: ")
+tiempo_hannah = input("Ingresa el tiempo de Hannah Neise (formato: minutos segundos centésimas): ")
+tiempo_jackie = input("Ingresa el tiempo de Jackie Narracott (formato: minutos segundos centésimas): ")
+tiempo_kimberly = input("Ingresa el tiempo de Kimberly Bos (formato: minutos segundos centésimas): ")
 
-JackieMinSt = input("Pon minutos de Jackie: ")
-JackieSegSt = input("Segundos de Jackie: ")
-JackieCentSt = input("Centesimas de Jackie: ")
+# --- Extraer minutos segundos y centésimas ---
+minutos_hannah, segundos_hannah, centesimas_hannah = tiempo_hannah.split(" ")
+minutos_jackie, segundos_jackie, centesimas_jackie = tiempo_jackie.split(" ")
+minutos_kimberly, segundos_kimberly, centesimas_kimberly = tiempo_hannah.split(" ")
 
-KimberMinSt = input("Pon minutos de Kimber: ")
-KimberSegSt = input("Segundos  de Kimber: ")
-KimberCentSt = input("Centesimas de Kimber: ")
+# --- Convertimos los tiempos a segundos ---
+tiempo_hannah = float(minutos_hannah) * 60 + float(segundos_hannah) + float(centesimas_hannah) * 0.01
+tiempo_jackie = float(minutos_jackie) * 60 + float(segundos_jackie) + float(centesimas_jackie) * 0.01
+tiempo_kimberly = float(minutos_kimberly) * 60 + float(segundos_kimberly) + float(centesimas_kimberly) * 0.01
 
-#Convierto en un numero entero
+# --- Calculamos la velocidad media ---
+velocidad_hannah = 100.0/tiempo_hannah
+velocidad_jackie = 100.0/tiempo_jackie
+velocidad_kimberly = 100.0/tiempo_kimberly
 
-HannahMin = int(HannahMinSt)
-HannahSeg = int(HannahSegSt)
-HannahCent = int(HannahCentSt)
-
-JackieMin = int(JackieMinSt)
-JackieSeg = int(JackieSegSt)
-JackieCent = int(JackieCentSt)
-
-KimberMin = int(KimberMinSt)
-KimberSeg = int(KimberSegSt)
-KimberCent = int(KimberCentSt)
-
-
-
-
-# Convertir los tiempos de minutos-segundos-centésimas a segundos
-
-HannahSeg = HannahSeg + (HannahMin * 60) + (HannahCent/100)
-
-JackieSeg = JackieSeg + (JackieMin * 60) + (JackieCent/100)
-
-KimberSeg = KimberSeg + (KimberMin * 60) + (KimberCent/100)
-
-# La pista = 100 metros, calcular la velocidad media de cada uno de ellos en
-# metros por segundo. 
-
-VelHannahSeg = 100/HannahSeg
-
-VelJackieSeg = 100/JackieSeg
-
-VelKimberSeg = 100/KimberSeg
-
-# Imprimir resultados
-
-print("Los segundos de Hannah son: ", HannahSeg, ", la velocidad media: ", VelHannahSeg, "(m/s) metros/segundo")
-print("Los segundos de Jackie son: ", JackieSeg, ", la velocidad media: ", VelJackieSeg, "(m/s) metros/segundo")
-print("Los segundos de Kimber son: ", KimberSeg, ", la velocidad media: ", VelKimberSeg, "(m/s) metros/segundo")
-
-
-
-
-
+# --- Imprimir los resultados por pantalla ---
+print("La velocidad media de Hannah Neise fue de ", velocidad_hannah, " metros por segundo")
+print("La velocidad media de Jackie Narracott fue de ", velocidad_jackie, " metros por segundo")
+print("La velocidad media de Kimberly Bos fue de ", velocidad_kimberly, " metros por segundo")
