@@ -1,6 +1,3 @@
-minutos_hannah = input("Ingresa los minutos para hannah")
-segundos_hannah = input("Ingresa los segundos para hannah")
-centesimas_hannah = input("Ingresa las centesimas para hannah")
 
 tiempo_hannah = input("Ingresa el tiempo de Hannah Neise (formato: minutos segundos centésimas): ")
 tiempo_jackie = input("Ingresa el tiempo de Jackie Narracott (formato: minutos segundos centésimas): ")

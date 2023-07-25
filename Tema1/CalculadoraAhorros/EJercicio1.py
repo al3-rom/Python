@@ -1,7 +1,7 @@
-# Pedir nombre por pantalla, imprimir un saludo
-nombre = input('Pon tu nombre! ')
+# Pedir nombre por pantalla, imprimir un saludo.
+nombre = input('Pon tu nombre!: ')
 
-print("Hola", nombre)
+print("Hola", nombre, "!")
 
 horasJobSt = input("Pon tus horas trabajadas(40): ")
 horasJob = int(horasJobSt)
@@ -10,25 +10,22 @@ dineroHoraSt = input("Dinero ganado por hora: ")
 dineroHora = int(dineroHoraSt)
 
 # Calculo salario semanal
-SalarioSemana = dineroHora * horasJob
-
-# Calculo salario mensual( mas o menos )
-SalarioMes = SalarioSemana * 4
+salarioSemana = dineroHora * horasJob
 
 # Calculo salario anual
-SalarioAnual = SalarioMes * 12
+salarioAnual = salarioSemana * 52 # 52 - son semanas en el año
 
 # Imprimo por pantalla 
-print(nombre, "tienes unas ganancias anuales de: ", SalarioAnual, "euros")
+print(nombre, "tienes unas ganancias anuales de: ", salarioAnual, "euros")
 
 # Hago gastos semanales
 gastosSemanalSt = input("Tus gastos semanales: ")
-gastosSemanal = int(gastosSemanalSt)
+gastosSemanal = float(gastosSemanalSt)
 
 # Gasto anual
-gastoAnual = gastosSemanal * 4 * 12
+gastoAnual = gastosSemanal * 52
 
-ahorroAnual = SalarioAnual - gastoAnual
+ahorroAnual = salarioAnual - gastoAnual
 
 print("Tus gastos anuales son: ", gastoAnual, "euros, tus ahorros anuales son: ", ahorroAnual)
 

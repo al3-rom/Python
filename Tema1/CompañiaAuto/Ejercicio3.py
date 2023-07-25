@@ -27,9 +27,17 @@ NumVendidoRMBPlus = int(NumVendidoRMBPlusSt)
 NumVendidoRMBTT = int(NumVendidoRMBTTSt)
 
 # Calculo comision
-Comisionar = NumVendidoRMB1 * RMB1 * 0.3 + NumVendidoRMBPlus * RMBPlus * 0.5 + NumVendidoRMBTT * RBMTT * 0.7
+ComisionarRMB1 = NumVendidoRMB1 * RMB1 * 0.03  
+ComisionarRMBPlus = NumVendidoRMBPlus * RMBPlus * 0.05
+ComisionarRBMTT = NumVendidoRMBTT * RBMTT * 0.07
+
+#Cantidad total
+ComisionTotal = ComisionarRBMTT + ComisionarRMB1 + ComisionarRMBPlus
 
 # Imprimo por pantalla
-print("La comosion de este mes por coches vendidos es: ", Comisionar, "euros")
+print("La comision por el RMB1 en este mes es: ", ComisionarRMB1)
+print("La comision por el RMBPlus en este mes es: ", ComisionarRMBPlus)
+print("La comision por el RMBTT en este mes es: ", ComisionarRBMTT)
+print("La comision total es: ", ComisionTotal)
 
 

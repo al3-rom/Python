@@ -11,48 +11,44 @@
 # Escribe la cantidad de cada alimento consumido y que calcule e imprima el total
 # de la cuenta.
 
+# Definir el precio
 
-Sopa_pescado = 10 
-Dorada_horno = 18 
-Arroz_curry = 14 
-Lasaña_carne = 15
-Brownie_chocolate = 8 
-Helado = 6 
-Refrescos = 5,5
-Café = 3,5
+precio_ensalada_mixta = 12
+precio_sopa_pescado = 10
+precio_dorada_horno = 18
+precio_arroz_curry = 14
+precio_lasagna_carne = 15
+precio_brownie_chocolate = 8
+precio_helado = 6
+precio_refresco = 5.5
+precio_cafe = 3.5
 
-repetir = True
 
-SumarSopa = 0
-SumarDorada = 0
-SumarArroz = 0
-SumarLasaña = 0
-SumarBrownie = 0
-SumarHelado = 0
-SumarRefrescos = 0
-SumarCafe = 0
+# Pedimos la cantidad de cada alimento consumido
 
-if repetir == True:
-    print("Que quieres tomar?")
-if Sopa_pescado: 
-    SumarSopa = SumarSopa + 1
-elif Dorada_horno:
-    SumarDorada = SumarDorada + 1
-elif Arroz_curry:
-    SumarArroz = SumarArroz + 1
-elif Lasaña_carne:
-    SumarLasaña = SumarLasaña + 1
-elif Brownie_chocolate:
-    SumarBrownie = SumarBrownie + 1
-elif Helado: 
-    SumarHelado = SumarHelado + 1
-elif Refrescos:
-    SumarRefrescos = SumarRefrescos + 1
-elif Café:
-    SumarCafe = SumarCafe + 1
-    print("Quieres algo mas? (True o False)")
-    repetir = input()
+cantidad_ensalada_mixta = int(input("¿Cuántas ensaladas mixtas se han consumido? "))
+cantidad_sopa_pescado = int(input("¿Cuántas sopas de pescado se han consumido? "))
+cantidad_dorada_horno = int(input("¿Cuántas doradas al horno se han consumido? "))
+cantidad_arroz_curry = int(input("¿Cuántos arroces al curry se han consumido? "))
+cantidad_lasagna_carne = int(input("¿Cuántas lasañas de carne se han consumido? "))
+cantidad_brownie_chocolate = int(input("¿Cuántos brownies de chocolate se han consumido? "))
+cantidad_helado = int(input("¿Cuántos helados se han consumido? "))
+cantidad_refresco = int(input("¿Cuántos refrescos se han consumido? "))
+cantidad_cafe = int(input("¿Cuántos cafés se han consumido? "))
 
-    ## No se que hacer
+# --- Calculamos el total de la cuenta ---
+total = cantidad_ensalada_mixta * precio_ensalada_mixta + \
+    cantidad_sopa_pescado * precio_sopa_pescado + \
+    cantidad_dorada_horno * precio_dorada_horno + \
+    cantidad_arroz_curry * precio_arroz_curry + \
+    cantidad_lasagna_carne * precio_lasagna_carne + \
+    cantidad_brownie_chocolate * precio_brownie_chocolate + \
+    cantidad_helado *  precio_helado + \
+    cantidad_refresco * precio_refresco + \
+    cantidad_cafe * precio_cafe 
+
+# --- Imprimimos la cuenta ---
+print("La cuenta suma un total de ", total," euros.")
+
 
 

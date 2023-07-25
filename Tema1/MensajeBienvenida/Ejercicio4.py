@@ -38,6 +38,6 @@ print(nombre)
 
 # Consigue que el mensaje final sea: ‘¡Hola, <Nombre>, estas usando Python!’
 
-mensaje = "Hola, " + nombre+ ", estas usando " + lenguage + "!"
+mensaje = "Hola, " + nombre + ", estas usando " + lenguage + "!"
 
 print(mensaje)

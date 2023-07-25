@@ -17,7 +17,7 @@ print(DineroNum, "Euros son :", EnDolar, "$")
 # La casa se queda un 10% en concepto de ‘tasas de gestión’. Calcula el monto
 # recibido, el cambio en dólares, la cantidad que se queda la casa de cambios y la cantidad de
 # dólares restante que recibirá el usuario. Imprime el desglose por pantalla formateado de tal
-# forma que quede claro para el usuario. 
+# forma que quede claro para el usuario 
 
 # La cantidad que se queda la casa de cambios
 tasasGestion = EnDolar * 0.1
